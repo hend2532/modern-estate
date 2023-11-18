@@ -1,0 +1,102 @@
+:root{
+  --main-color:rgb(253, 113, 61);
+}
+/* start section */
+.section{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 10px;
+  width: 90%;
+  background: #fff;
+}
+h1{
+  text-align: left;
+}
+h3{
+  font-weight: 400;
+  color: var(--main-color);
+  margin:25px  5px;
+  width: 80% ;
+}
+p{
+  text-align: left;
+  margin: 5px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+@media(max-width:450px){
+  .section{
+    width: 100%;
+  }
+  .contact{
+    width: 100%;
+  }
+  .form{
+    width: 100%;
+  }
+  h3{
+    width:90%;
+  }
+  p{
+    width: 99%;
+  }
+}
+/* end section */
+/* start form */
+.contact{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+h2{
+  color: var(--main-color);
+  padding: 10px;
+  margin: 20px;
+  letter-spacing: 1.7px;
+  font-size: 30px;
+  font-weight: 500;
+}
+form{
+  display:flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  margin: 30px;
+}
+label{
+  margin-bottom: 7px;
+  margin-top: 15px;
+}
+input{
+  border: none;
+  border-bottom: 2px solid #333;
+  transition: .3s;
+  outline: 0;
+  padding: 5px;
+}
+input:focus{
+  border-bottom: 2px solid var(--main-color);
+  box-shadow: 0 0 5px var(--main-color);
+}
+button{
+  color: white;
+  background: #333;
+  border: 0;
+  outline: 0;
+  margin: 20px ;
+  padding: 10px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  transition: background .5s;
+  cursor: pointer;
+}
+input[type="email"] span{
+  color: red;
+}
+button:hover{
+  background: var(--main-color);
+}
+.form{
+  margin-bottom: 50px;
+}
+/* end form */

@@ -1,0 +1,61 @@
+:root{
+  --main-color:rgb(253, 113, 61);
+}
+/* start section */
+.section{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 10px;
+  width: 90%;
+  background: #fff;
+}
+.section h1{
+  text-align: left;
+}
+h3{
+  font-weight: 400;
+  color: var(--main-color);
+  margin:25px  5px;
+  width: 80% ;
+}
+.section p{
+  text-align: left;
+  margin: 5px;
+}
+/* end section */
+/* start best */
+.best{
+  background: #333;
+  width: 100%;
+  padding: 20px;
+  margin: 100px auto;
+}
+.best img{
+  width: 400px;
+  margin: 5%;
+}
+.best h1{
+  color: #fff;
+}
+.best p{
+  color: #eee;
+}
+.property h3{
+  margin:10px auto;
+  text-align: center;
+}
+@media(max-width:300px){
+  .best{
+    /* padding: 5px; */
+  }
+  .best img{
+    width: 100%;
+  }
+  .section{
+    width: 99%;
+  }
+  p{
+    width: 99%;
+  }
+}
+/* end best */
